@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Jandrie P. Daro, a BSIT student and aspiring web developer." />
+  <title>Jandrie P. Daro | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Jandrie Daro home">JD<span>.</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span><span class="sr-only">Open navigation</span></button>
+    <nav id="primary-nav" class="nav" aria-label="Primary navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a>
+      <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> BSIT 4-C · IT415</p>
+        <h1>Building ideas into <em>useful</em> digital experiences.</h1>
+        <p class="hero-intro">Hi, I’m <strong>Jandrie P. Daro</strong> — a Bachelor of Science in Information Technology student exploring thoughtful web development, systems, and cybersecurity.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">View my projects <span>↓</span></a><a class="button button-secondary" href="#contact">Contact me</a></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="portrait-wrap"><img src="jandrie-daro.jpg" alt="Portrait of Jandrie P. Daro" /><div class="portrait-orbit orbit-one"></div><div class="portrait-orbit orbit-two"></div></div>
+        <div class="availability"><span class="pulse"></span><span>Open to learn<br />and collaborate</span></div>
+        <p class="visual-caption">ASPIRING<br />DEVELOPER <span>2026</span></p>
+      </div>
+    </section>
+
+    <section id="about" class="about section-shell section-pad">
+      <div class="section-label reveal"><span>01</span> About me</div>
+      <div class="about-grid">
+        <h2 class="reveal">Curious by nature.<br /><em>Focused</em> by purpose.</h2>
+        <div class="about-content reveal"><p>I’m an IT student who enjoys turning concepts into clear, practical digital solutions. I’m growing my skills through hands-on projects, collaborative activities, and a genuine interest in how technology can solve everyday problems.</p><p>Outside the classroom, I enjoy exploring new tools, improving my craft, and learning from the people I work with. My goal is to become a capable developer who builds accessible, reliable experiences that make a difference.</p><a class="text-link" href="#contact">Get to know me <span>→</span></a></div>
+      </div>
+      <div class="interest-row reveal"><span>Currently exploring</span><div>Web development <i>✦</i> Cybersecurity <i>✦</i> UI/UX design <i>✦</i> Problem solving</div></div>
+    </section>
+
+    <section id="skills" class="skills section-pad">
+      <div class="section-shell"><div class="section-label light reveal"><span>02</span> Toolkit</div><div class="skills-heading reveal"><h2>Things I’m learning<br />and <em>making with.</em></h2><p>A practical foundation, always expanding.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><div class="skill-number">01</div><h3>Programming<br />Languages</h3><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>PHP <small>placeholder</small></li></ul></article>
+          <article class="skill-card reveal"><div class="skill-number">02</div><h3>Web<br />Development</h3><ul><li>Responsive Design</li><li>Semantic HTML</li><li>REST APIs <small>placeholder</small></li><li>Git &amp; GitHub</li></ul></article>
+          <article class="skill-card reveal"><div class="skill-number">03</div><h3>Databases<br />&amp; Tools</h3><ul><li>MySQL <small>placeholder</small></li><li>VS Code</li><li>Figma <small>placeholder</small></li><li>Postman <small>placeholder</small></li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section-shell section-pad">
+      <div class="projects-top reveal"><div><div class="section-label"><span>03</span> Selected work</div><h2>Projects &amp;<br /><em>activities.</em></h2></div><a class="text-link" href="#contact">More coming soon <span>↗</span></a></div>
+      <div class="projects-grid">
+        <article class="project-card project-featured reveal"><div class="project-art art-iot"><span class="art-label">01 / IOT</span><div class="data-ring"></div><div class="data-window"><span></span><span></span><span></span><b>Air quality</b><strong>Good</strong><small>Live monitoring system</small></div></div><div class="project-info"><div><p class="project-type">Capstone · In progress</p><h3>Smart Air Quality<br />Monitoring System</h3></div><p class="project-description">An IoT-based dashboard concept for monitoring environmental readings and presenting meaningful data clearly.</p><div class="tags"><span>PHP</span><span>MySQL</span><span>IoT</span></div><div class="project-links"><a href="#" aria-label="GitHub link for Smart Air Quality Monitoring System">GitHub ↗</a><a href="#" aria-label="Live demo for Smart Air Quality Monitoring System">Live demo ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-art art-web"><span class="art-label">02 / WEB</span><div class="browser"><div class="browser-bar"><i></i><i></i><i></i></div><b>WELCOME TO<br />VACA</b><span>Discover the world<br />one place at a time.</span><div class="browser-image"></div></div></div><div class="project-info"><p class="project-type">Academic project · First year</p><h3>Travel Website<br />Concept</h3><p class="project-description">A responsive travel landing page designed to introduce destinations with a simple, engaging layout.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="#">GitHub ↗</a><a href="#">Live demo ↗</a></div></div></article>
+        <article class="project-card reveal"><div class="project-art art-security"><span class="art-label">03 / SECURITY</span><div class="terminal"><span>security@lab:~$</span><b>ACCESS<br />GRANTED</b><small>system protected</small></div></div><div class="project-info"><p class="project-type">Academic activity · Third year</p><h3>Cybersecurity<br />Final Project</h3><p class="project-description">A class project exploring secure digital practices and the foundations of web defense.</p><div class="tags"><span>Security</span><span>Research</span><span>Web</span></div><div class="project-links"><a href="#">GitHub ↗</a><a href="#">Details ↗</a></div></div></article>
+      </div>
+      <p class="project-note">These cards are designed as editable placeholders — replace titles, descriptions, links, and technologies with your published work.</p>
+    </section>
+
+    <section id="education" class="education section-pad"><div class="section-shell education-grid"><div class="section-label light reveal"><span>04</span> Education</div><div class="education-main reveal"><p class="eyebrow"><span></span> 2023 — Present <small>editable</small></p><h2>Bachelor of Science in<br /><em>Information Technology</em></h2><p class="school">Your School / University Name <small>— replace with your institution</small></p><div class="education-details"><div><span>Program</span><b>BSIT, 4th Year</b></div><div><span>Expected graduation</span><b>2027 <small>editable</small></b></div><div><span>Focus</span><b>Web &amp; Systems Development</b></div></div><p class="achievement">Relevant activities: web development projects, database fundamentals, cybersecurity coursework, and collaborative capstone work. <small>Update this with your achievements.</small></p></div></div></section>
+
+    <section id="contact" class="contact section-shell section-pad"><div class="contact-intro reveal"><div class="section-label"><span>05</span> Contact</div><h2>Let’s make something<br /><em>meaningful.</em></h2><p>Have a question, opportunity, or idea? I’d be happy to hear from you.</p><a class="email-link" href="mailto:your.email@example.com">your.email@example.com <span>↗</span></a><div class="social-links"><a href="#" aria-label="Jandrie's GitHub profile">GitHub</a><a href="#" aria-label="Jandrie's LinkedIn profile">LinkedIn</a></div></div><form class="contact-form reveal" id="contact-form"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required placeholder="What should I call you?" /><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" /><label for="message">Message</label><textarea id="message" name="message" rows="4" required placeholder="Tell me a little about your idea..."></textarea><button class="button button-primary" type="submit">Send message <span>↗</span></button><p class="form-message" role="status" aria-live="polite"></p></form></section>
+  </main>
+  <footer><a class="brand" href="#home">JD<span>.</span></a><p>© <span id="year"></span> Jandrie P. Daro. Built with curiosity.</p><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
