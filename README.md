@@ -1,19 +1,17 @@
-<<<<<<< HEAD
-# Jandrie P. Daro Portfolio
+Personal Portfolio
+Name: Jandrie P. Daro
+Year Level: BSIT 4
+Set/Section: C
+Subject: IT415
 
-A responsive personal portfolio built with plain HTML, CSS, and JavaScript. No installation or build step is required.
+About This Repository
 
-## Run locally
+This repository contains my personal web portfolio showcasing my background, skills, education, and IT projects.
 
-Open `index.html` in any modern browser, or serve the `portfolio` folder with a local development server.
+Portfolio Website
 
-## Customize
+This portfolio was created to present my work, skills, and development as a Bachelor of Science in Information Technology student.
 
-- Replace `jandrie-daro.jpg` with your preferred photo (keep the same filename or update the image path in `index.html`).
-- Search for `placeholder`, `your.email@example.com`, and `#` in `index.html` to add your real school details, contact information, social links, and project URLs.
-- Update project names, descriptions, technologies, and status directly in the Projects section.
+Projects
 
-The contact form is a visual local demo and does not send email until connected to a form backend or email service.
-=======
-# Portfolio
->>>>>>> 7903d7581225dafd640a5fe28446bff437f92e60
+The portfolio includes selected IT projects that I have worked on, including web development, authentication systems, IoT, and information systems projects.
