@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Jandrie P. Daro Portfolio
 
 A responsive personal portfolio built with plain HTML, CSS, and JavaScript. No installation or build step is required.
@@ -13,3 +14,6 @@ Open `index.html` in any modern browser, or serve the `portfolio` folder with a 
 - Update project names, descriptions, technologies, and status directly in the Projects section.
 
 The contact form is a visual local demo and does not send email until connected to a form backend or email service.
+=======
+# Portfolio
+>>>>>>> 7903d7581225dafd640a5fe28446bff437f92e60
