@@ -1,5 +1,6 @@
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
+const closeMenu = () => { nav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); };
 
 toggle.addEventListener('click', () => {
   const open = nav.classList.toggle('open');
@@ -7,9 +8,10 @@ toggle.addEventListener('click', () => {
 });
 
 document.querySelectorAll('.nav a').forEach((link) => link.addEventListener('click', () => {
-  nav.classList.remove('open');
-  toggle.setAttribute('aria-expanded', 'false');
+  closeMenu();
 }));
+
+document.addEventListener('keydown', (event) => { if (event.key === 'Escape') { closeMenu(); toggle.focus(); } });
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -22,8 +24,9 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach((item) => observer.observe(item));
 
 document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('contact-form').addEventListener('submit', (event) => {
-  event.preventDefault();
-  event.currentTarget.querySelector('.form-message').textContent = 'Thanks! Connect this form to your preferred email service before publishing.';
-  event.currentTarget.reset();
-});
+
+const navLinks = document.querySelectorAll('.nav a[href^="#"]');
+const navObserver = new IntersectionObserver((entries) => entries.forEach((entry) => {
+  if (entry.isIntersecting) navLinks.forEach((link) => link.toggleAttribute('aria-current', link.getAttribute('href') === `#${entry.target.id}`));
+}), { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
+document.querySelectorAll('main section[id]').forEach((section) => navObserver.observe(section));
